@@ -7,6 +7,7 @@ body.logged #loginPage {
 }
 body.logged #homePage {
     display: flex;
+    /* flex-direction: row; */
 }
 .page {
     width: 100vw;
@@ -18,7 +19,7 @@ body.logged #homePage {
     justify-content: center;
 }
 .page > * {
-    width: 300px;
+    width: 50vw;
 }
 
 #twoFAFormHolder {
@@ -36,3 +37,4 @@ body.logged #homePage {
 #loginForm.codeRequested .code{
     display: block;
 }
+

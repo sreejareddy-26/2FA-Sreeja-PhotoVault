@@ -1,6 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+      </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,14 +98,128 @@
       </form>
     </div>
     <div class="page" id="homePage">
-      <div>
+      <h2>Responsive Image Gallery</h2>
+<div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img_5terre.jpg">
+        <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">Cute Rocky Mountain</div>
+    </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Go Green!</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">LED Lights!</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Arizona Flooding</div>
+  </div>
+</div>
+</div>
+
+<div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="sparky1.jpg">
+        <img src="sparky1.jpg" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">Sparky</div>
+    </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="sparky2.jpg">
+      <img src="sparky2.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Sparky Again!</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="sparky3.jpg">
+      <img src="sparky3.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Oh Sparky!</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="sparky4.jpg">
+      <img src="sparky4.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Bye Sparky!</div>
+  </div>
+</div>
+</div>
+
+<div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="hayden.jpg">
+        <img src="hayden.jpg" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">Hayden!</div>
+    </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="collegeave.jpg">
+      <img src="collegeave.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">College Ave!</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="brickyard.jpg">
+      <img src="brickyard.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Brickyard!</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="sdfc.jpg">
+      <img src="sdfc.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">SDFC</div>
+  </div>
+</div>
+</div>
+
+<div class="clearfix"></div>
+
+
         <h4 class="text-center">Welcome, <span id="userId"></span></h4>
-        <p class="text-center">Your Age: <span id="userAge"></span></p>
-        <h5>Your workouts are listed below:</h5>
-        <div id="userWorkouts"></div>
-        <h5>Your diets are listed below:</h5>
-        <div id="userDiet"></div>
-      </div>
       <button id="logoutButton" class="btn btn-danger">LOGOUT</button>
       <div class="border-bottom border-dark pt-4 mb-4"></div>
       <div id="2FABox" class="d-flex flex-column align-items-center gap-3">
@@ -83,3 +246,4 @@
   </body>
   <script src="./scripts.js"></script>
 </html>
+
